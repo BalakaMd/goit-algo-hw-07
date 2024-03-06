@@ -61,6 +61,7 @@ def delete(root, key):
     return root
 
 
+# Завдання 1: Знаходження найбільшого значення в дереві
 def find_max_value(root):
     if root is None:
         return None
@@ -70,6 +71,7 @@ def find_max_value(root):
     return current.val
 
 
+# Завдання 2: Знаходження найменшого значення в дереві
 def find_min_value(root):
     if root is None:
         return None
@@ -77,6 +79,8 @@ def find_min_value(root):
         root = root.left
     return root.val
 
+
+# Завдання 3: Знаходження суми всіх значень в дереві
 
 def tree_sum(root):
     if root is None:
